@@ -4,26 +4,33 @@
 body {
     margin: auto;
     background-color: #EEECE4;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0px;
 }
 
 .wrapper {
     width: 100%;
     max-width: 31.25rem;
-    margin: 6rem auto;
 }
 
-
-
-.checkBoxes h2 {
+.title h2 {
     font-family: 'Secular One', sans-serif;
     font-size: 35px;
     text-align: center;
+    margin: 0px;
+    margin: 80px 0px 10px 0px;
 }
 
+.title p {
+    text-align: center;
+    margin: 0px;
+    margin: 0px 0px 40px 0px;
+}
+
+/*CHECKBOXES*/
 .box {
     display: flex;
     flex-direction: column;
-    font-family: 'Oxygen', sans-serif;
     border-radius: 43px;
     background: #f7f7f7;
     box-shadow: 27px -27px 67px #b7b7b7,
@@ -32,36 +39,76 @@ body {
     padding: 40px;
 }
 
+.info {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.info2 {
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+.info3 {
+    text-decoration: underline;
+    text-decoration-color: greenyellow;
+}
+
+.info4 {
+    text-decoration: underline;
+    text-decoration-color: purple;
+}
+
 .checkBox {
     margin-top: 20px;
-    margin-left: 20%;
 }
+
+.box img {
+    width: 15px;
+    margin-left: 8px;
+}
+
+/*CHECKBOXES*/
 
 
 /*SEARCH BAR*/
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+    background-color: #EEECE4;
+}
+
 .label {
-    margin-bottom: 1rem;
-    font-family: 'Oxygen', sans-serif;
+    font-size: .625rem;
+    text-transform: uppercase;
 }
 
 .searchBar {
     display: flex;
+    flex-direction: row;
     align-items: center;
     border-radius: 43px;
+    margin-left: -1.8rem;
     box-shadow: 27px -27px 67px #b7b7b7,
         -27px 27px 67px #ffffff;
-    margin: 40px 40px 0px 40px;
-
 }
 
 #searchQueryInput {
-    width: 100%;
+    width: 190px;
     height: 2.8rem;
     background: #f5f5f5;
     outline: none;
     border: none;
-    border-radius: 1.625rem;
+    border-radius: 43px;
     padding: 0 3.5rem 0 1.5rem;
     font-size: 1rem;
 }
+
+#searchQuerySubmit {
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
 /*SEARCH BAR*/

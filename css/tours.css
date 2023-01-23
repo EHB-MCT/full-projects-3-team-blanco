@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+body {
+
+    background-color: #EEECE4;
+}
+
+#tour-selector {
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+
+
+
+}
+
+#tour-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tour-option {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+
+}
+
+#start-tour-btn {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oxygen', sans-serif;
+    border-radius: 43px;
+    background: #f7f7f7;
+    box-shadow: 27px -27px 67px #b7b7b7,
+        -27px 27px 67px #ffffff;
+    margin: 40px 40px 0px 40px;
+    padding: 40px;
+    border: none;
+    font-family: 'Secular One', sans-serif;
+
+
+
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 6rem auto;
+}
+
+#start-tour-btn p {
+    font-family: 'Oxygen', sans-serif;
+    text-decoration: none;
+
+}
+
+.item1 span {
+    border-bottom: 5px solid #bad030;
+    padding-right: 100px;
+}
+
+.item2 span {
+    border-bottom: 5px solid;
+    padding-right: 100px;
+    border-image: linear-gradient(to right, #dd9f2e 25%, #bd5120 25%, #bd5120 50%, #bad030 50%, #bad030 75%, #71304e 75%) 5;
+}
+
+.item3 span {
+    border-bottom: 5px solid;
+    padding-right: 100px;
+    border-image: linear-gradient(to right, #dd9f2e 66%, #bd5120 66%, #bd5120 88%, #bad030 88%, #bad030 100%) 5;
+}
+
+.item4 span {
+    border-bottom: 5px solid;
+    padding-right: 100px;
+    border-image: linear-gradient(to right, #bd5120 40%, #bad030 40%, #bad030 100%) 5;
+}
+
+.item5 span {
+    border-bottom: 5px solid #dbd524;
+    padding-right: 100px;
+
+}
+
+.item6 span {
+    border-bottom: 5px solid #71304e;
+    padding-right: 100px;
+}
+
+.item7 span {
+    border-bottom: 5px solid #dd9f2e;
+    padding-right: 100px;
+}
+
+.item8 span {
+    border-bottom: 5px solid #bad030;
+    padding-right: 100px;
+}

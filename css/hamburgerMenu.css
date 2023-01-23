@@ -1,0 +1,38 @@
+.nav-toggle {
+    padding: .5em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+
+.hamburger {
+    display: block;
+    background: #000;
+    width: 2.5em;
+    height: 3.5px;
+    position: relative;
+    border-radius: 2em;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: #000;
+    width: 2.5em;
+    height: 3.5px;
+    border-radius: 2em;
+}
+
+.hamburger::before {
+    top: 8px;
+}
+
+.hamburger::after {
+    bottom: 8px;
+}

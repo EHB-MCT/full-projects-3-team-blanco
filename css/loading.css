@@ -1,0 +1,47 @@
+/*animation*/
+
+.overlay {
+    left: 0%;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    background: linear-gradient(to right, white 30%, green 30%, green 40%, yellow 40%, yellow 50%, red 50%, red 60%, purple 60%, purple 70%, white 70%, white 100%);
+    position: fixed;
+    animation: delay;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-top: 25%;
+    z-index: 140;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes delay {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
+
+* {
+    box-sizing: border-box;
+}

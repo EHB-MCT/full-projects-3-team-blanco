@@ -27,51 +27,6 @@ body {
     margin: 0px 0px 40px 0px;
 }
 
-/*CHECKBOXES*/
-.box {
-    display: flex;
-    flex-direction: column;
-    border-radius: 43px;
-    background: #f7f7f7;
-    box-shadow: 27px -27px 67px #b7b7b7,
-        -27px 27px 67px #ffffff;
-    margin: 40px 40px 0px 40px;
-    padding: 40px;
-
-}
-
-.info {
-    text-decoration: underline;
-    text-decoration-color: orange;
-}
-
-.info2 {
-    text-decoration: underline;
-    text-decoration-color: red;
-}
-
-.info3 {
-    text-decoration: underline;
-    text-decoration-color: greenyellow;
-}
-
-.info4 {
-    text-decoration: underline;
-    text-decoration-color: purple;
-}
-
-.checkBox {
-    margin-top: 20px;
-}
-
-.box img {
-    width: 15px;
-    margin-left: 8px;
-}
-
-/*CHECKBOXES*/
-
-
 /*SEARCH BAR*/
 .wrapper1 {
     display: flex;
@@ -113,3 +68,44 @@ body {
 }
 
 /*SEARCH BAR*/
+
+/*BUTTONS*/
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    margin: 30px 40px 10px 40px;
+    font-size: 20px;
+    padding: 30px 20px 30px 20px;
+    border-radius: 33px;
+    background: #f7f7f7;
+    box-shadow: -2px 2px 4px #cac9c2, 2px -2px 4px #ffffff;
+    border: none;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+#line {
+    text-decoration-color: #DD9F2E;
+}
+
+#line1 {
+    text-decoration-color: #b8391c;
+}
+
+#line2 {
+    text-decoration-color: #BAD030;
+}
+
+#line3 {
+    text-decoration-color: #71304E;
+}
+
+.buttonClick {
+    box-shadow: inset -2px 2px 4px #cac9c2, inset 2px -2px 4px #ffffff;
+}
+
+/*BUTTONS*/

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+body {
+    margin: auto;
+    background-color: #EEECE4;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.wrapper h2 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+    margin: 50px 0px 10px 0px;
+}
+
+.wrapper img {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    margin: 30px;
+}
+
+.directions {
+    margin: 50px 0px 0px 0px;
+}
+
+.column,
+.column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column .column2 svg,
+p {
+    padding: 10px;
+}
+
+.column2 svg {
+    fill: gray;
+}

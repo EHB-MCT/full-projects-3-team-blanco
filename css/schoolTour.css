@@ -49,50 +49,23 @@ body {
 
 }
 
-.item1 span {
-    border-bottom: 5px solid #bad030;
-    padding-right: 60px;
-    text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    word-spacing: 4px;
-}
-
-.item2 span {
-    border-bottom: 5px solid;
-    padding-right: 100px;
-    border-image: linear-gradient(to right, #dd9f2e 25%, #bd5120 25%, #bd5120 50%, #bad030 50%, #bad030 75%, #71304e 75%) 5;
-}
-
-.item3 span {
-    border-bottom: 5px solid;
-    padding-right: 100px;
-    border-image: linear-gradient(to right, #dd9f2e 66%, #bd5120 66%, #bd5120 88%, #bad030 88%, #bad030 100%) 5;
-}
-
 .item4 span {
     border-bottom: 5px solid;
     padding-right: 100px;
     border-image: linear-gradient(to right, #bd5120 40%, #bad030 40%, #bad030 100%) 5;
 }
 
-.item5 span {
-    border-bottom: 5px solid #dbd524;
-    padding-right: 100px;
+
+
+#start-tour-container {
+    text-align: center;
 
 }
 
-.item6 span {
-    border-bottom: 5px solid #71304e;
-    padding-right: 100px;
-}
-
-.item7 span {
-    border-bottom: 5px solid #dd9f2e;
-    padding-right: 100px;
-}
-
-.item8 span {
-    border-bottom: 5px solid #bad030;
-    padding-right: 100px;
+#start-tour-btn2 {
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
 }

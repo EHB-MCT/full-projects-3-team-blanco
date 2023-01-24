@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/goTo.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/css/buttons.css" />
-    <title>Document</title>
-  </head>
-  
-  <body>
-    <div class="buttons">
-      <button class="button" onclick="location.href='goTo.html'" type="button">
-        tours
-      </button>
-      <button class="button" onclick="location.href='#'" type="button">
-        map
-      </button>
-      <button class="button" onclick="location.href='goTo.html'" type="button">
-        go to
-      </button>
-    </div>
-    
-    <script>
-      $(function () {
-        $(".button").click(function () {
-          $(this).toggleClass("buttonClick");
-        });
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/goTo.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/buttons.css" />
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="hamburger_cross">
+
+  </div>
+
+  <div class="buttons">
+    <button class="button" onclick="location.href='goTo.html'" type="button">
+      tours
+    </button>
+    <button class="button" onclick="location.href='#'" type="button">
+      map
+    </button>
+    <button class="button" onclick="location.href='goTo.html'" type="button">
+      go to
+    </button>
+  </div>
+  <script>
+    $(function () {
+      $(".button").click(function () {
+        $(this).toggleClass("buttonClick");
+
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

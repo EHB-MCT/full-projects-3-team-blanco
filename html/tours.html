@@ -44,6 +44,27 @@
         </div>
     </div>
 
+    <button id="tour1-btn">Tour 1</button>
+    <div id="tour1-popup" class="popup">
+        <button class="item4" id="start-tour-btn"><span>School Tour</span>
+            <p>Gallery of humankind, Gallery of evolution, Living planet</p>
+        </button>
+        <button id="close-btn">Close</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#tour1-btn").click(function () {
+                $("#tour1-popup").show();
+            });
+
+            $("#close-btn").click(function () {
+                $("#tour1-popup").hide();
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

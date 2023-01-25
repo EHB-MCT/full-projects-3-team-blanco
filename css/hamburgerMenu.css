@@ -18,6 +18,24 @@
   margin: 10px 0px 0px 0px;
 }
 
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons img {
+  width: 10%;
+  margin: 0px 30px 20px 30px;
+}
+
+#icon1 {
+  width: 10%;
+}
+
+#icon2 {
+  width: 10%;
+}
+
 .navbar .menu-items {
   display: flex;
 }

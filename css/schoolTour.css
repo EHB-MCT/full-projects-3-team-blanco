@@ -2,28 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
 body {
-
     background-color: #EEECE4;
+}
+
+p {
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    font-size: 15px;
 }
 
 #tour-selector {
     text-align: center;
     font-family: 'Secular One', sans-serif;
     font-size: 25pt;
-    padding-top: 5%;
-
-
-
 }
-
-#tour-options {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
 
 #start-tour-btn {
     display: flex;
@@ -33,14 +25,12 @@ body {
     background: #f7f7f7;
     box-shadow: 27px -27px 67px #b7b7b7,
         -27px 27px 67px #ffffff;
-    margin: 30px 40px 30px 40px;
+    margin: 0px 10px 30px 10px;
     padding: 30px;
-    padding-right: 10px;
     border: none;
     font-family: 'Secular One', sans-serif;
-    font-size: 18pt;
+    font-size: 20px;
 }
-
 
 #start-tour-btn p {
     font-family: 'Oxygen', sans-serif;
@@ -52,23 +42,83 @@ body {
 .item4 span {
     border-bottom: 5px solid;
     border-radius: 25px;
-    padding-right: 100px;
+    padding-right: 170px;
     border-image: linear-gradient(to right, #bd5120 40%, #bad030 40%, #bad030 100%) 5;
 }
 
-
-
-
-#start-tour-container {
-    text-align: center;
-
+.button1 {
+    background: #f5f5f5;
+    margin: 0px 20px 20px 20px;
+    padding: 10px;
+    width: 90%;
+    font-size: 20px;
+    border-radius: 33px;
+    box-shadow: 27px -27px 67px #b7b7b7,
+        -27px 27px 67px #ffffff;
+    border: none;
+    font-family: 'Oxygen', sans-serif;
 }
 
-#start-tour-btn2 {
-    padding: 10px 20px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1.2em;
-    border: none;
+
+
+/*slider*/
+/* #carousel-container {
+    height: 350px;
+    padding: 0;
+    overflow-x: scroll;
+    --slide-count: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carousel {
+    width: calc(100% * var(--slide-count));
+    display: flex;
+}
+
+.slide>img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+#carousel-container {
+    height: 350px;
+    width: 100%;
+    padding: 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    --slide-count: 5;
+}
+
+.slide {
+    scroll-snap-align: start;
+} */
+
+#carousel-container {
+    height:200px;
+    width: 600px;
+    padding: 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    --slide-count: 5;
+}
+
+#carousel {
+    width: calc(100% * var(--slide-count));
+    display: flex;
+}
+
+.slide>img {
+    border-radius: 45px;
+    width: 60%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.slide {
+    scroll-snap-align: start;
 }

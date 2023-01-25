@@ -4,14 +4,12 @@
 }
 
 .arrow img {
-    position: relative;
     width: 60px;
     margin-left: 20px;
     margin-top: 20px;
 }
 
 .header .title {
-    position: relative;
     font-family: 'Secular One', sans-serif;
     font-size: 35px;
     text-align: center;

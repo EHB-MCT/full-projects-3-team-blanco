@@ -10,10 +10,6 @@ body {
     text-align: center;
     font-family: 'Secular One', sans-serif;
     font-size: 25pt;
-    padding-top: 5%;
-
-
-
 }
 
 #tour-options {
@@ -23,8 +19,6 @@ body {
     flex-direction: column;
 }
 
-
-
 #start-tour-btn {
     display: flex;
     flex-direction: column;
@@ -33,7 +27,7 @@ body {
     background: #f7f7f7;
     box-shadow: 27px -27px 67px #b7b7b7,
         -27px 27px 67px #ffffff;
-    margin: 30px 40px 30px 40px;
+    margin: 10px 10px 30px 10px;
     padding: 30px;
     padding-right: 10px;
     border: none;

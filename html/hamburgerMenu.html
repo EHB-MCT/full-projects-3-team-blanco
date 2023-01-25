@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="../css/hamburgerMenu.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
 
-  <body>
-    <nav>
-      <div class="navbar">
-        <div class="container nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
+  <link rel="stylesheet" href="../css/hamburgerMenu.css" />
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+</head>
 
-          <div class="menu-items">
-            <div class="buttons">
-              <button
-                class="button"
-                onclick="location.href='goTo.html'"
-                type="button"
-              >
-                tours
-              </button>
-              <button class="button" onclick="location.href='#'" type="button">
-                map
-              </button>
-              <button
-                class="button"
-                onclick="location.href='goTo.html'"
-                type="button"
-              >
-                go to
-              </button>
-            </div>
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+        <input class="checkbox" type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+
+        <div class="menu-items">
+          <div class="buttons">
+            <button class="button" onclick="location.href='goTo.html'" type="button">
+              tours
+            </button>
+            <button class="button" onclick="location.href='#'" type="button">
+              map
+            </button>
+            <button class="button" onclick="location.href='goTo.html'" type="button">
+              go to
+            </button>
           </div>
         </div>
       </div>
-    </nav>
-    <script>
-      $(function () {
-        $(".button").click(function () {
-          $(this).toggleClass("buttonClick");
-        });
+    </div>
+  </nav>
+  <script>
+    $(function () {
+      $(".button").click(function () {
+        $(this).toggleClass("buttonClick");
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

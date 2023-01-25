@@ -51,9 +51,11 @@ body {
 
 .item4 span {
     border-bottom: 5px solid;
+    border-radius: 25px;
     padding-right: 100px;
     border-image: linear-gradient(to right, #bd5120 40%, #bad030 40%, #bad030 100%) 5;
 }
+
 
 
 
@@ -65,7 +67,8 @@ body {
 #start-tour-btn2 {
     padding: 10px 20px;
     background-color: #f2f2f2;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 1.2em;
+    border: none;
 }

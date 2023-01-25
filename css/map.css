@@ -20,6 +20,16 @@ body {
     margin: 50px 0px 0px 0px;
 }
 
+.wrapper h3 {
+    margin: 0px 100px 0px 100px;
+    font-size: 20px;
+    font-family: 'Secular One', sans-serif;
+    text-align: center;
+    border-bottom: 4px solid;
+    border-radius: 25px;
+    border-image: linear-gradient(to right, #bd5120 40%, #bad030 40%, #bad030 100%) 5;
+}
+
 .wrapper img {
     display: flex;
     justify-content: center;
@@ -59,7 +69,7 @@ p {
 
 /* This styles the 3D object inserted in the aside container */
 .aSide model-viewer {
-    height: 550px;
+    height: 850px;
     width: 350px;
     position: absolute;
     /* top: 0;

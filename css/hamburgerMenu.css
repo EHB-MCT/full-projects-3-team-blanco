@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 .container {
   max-width: 1050px;
   width: 90%;
@@ -74,6 +76,7 @@
 }
 
 .navbar .menu-items {
+  background-color: #EEECE4;
   padding-top: 120px;
   height: 100vh;
   width: 100%;
@@ -119,8 +122,9 @@
 
 .button {
   font-size: 40px;
+  font-family: 'Secular One', sans-serif;
   margin: 1em;
-  padding: 30px 90px;
+  padding: 30px 75px;
   border-radius: 33px;
   background: #f7f7f7;
   box-shadow: -2px 2px 4px #cac9c2, 2px -2px 4px #ffffff;

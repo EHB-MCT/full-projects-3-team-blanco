@@ -1,5 +1,6 @@
 * {
     background-color: #EEECE4;
+    margin: 0px;
 }
 
 .arrow img {
@@ -23,5 +24,3 @@
     font-size: 17px;
     margin: 0 20px 0 20px;
 }
-
-.carousel {}

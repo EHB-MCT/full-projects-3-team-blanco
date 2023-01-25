@@ -9,6 +9,8 @@ body {
 #tour-selector {
     text-align: center;
     font-family: 'Secular One', sans-serif;
+    font-size: 25pt;
+    padding-top: 5%;
 
 
 
@@ -21,16 +23,7 @@ body {
     flex-direction: column;
 }
 
-.tour-option {
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 30%;
-    text-align: center;
 
-}
 
 #start-tour-btn {
     display: flex;
@@ -40,30 +33,29 @@ body {
     background: #f7f7f7;
     box-shadow: 27px -27px 67px #b7b7b7,
         -27px 27px 67px #ffffff;
-    margin: 40px 40px 0px 40px;
-    padding: 40px;
+    margin: 30px 40px 30px 40px;
+    padding: 30px;
+    padding-right: 10px;
     border: none;
     font-family: 'Secular One', sans-serif;
-
-
-
+    font-size: 18pt;
 }
 
-.wrapper {
-    width: 100%;
-    max-width: 31.25rem;
-    margin: 6rem auto;
-}
 
 #start-tour-btn p {
     font-family: 'Oxygen', sans-serif;
     text-decoration: none;
+    text-align: left;
 
 }
 
 .item1 span {
     border-bottom: 5px solid #bad030;
-    padding-right: 100px;
+    padding-right: 60px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    word-spacing: 4px;
 }
 
 .item2 span {

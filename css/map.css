@@ -17,7 +17,7 @@ body {
     font-size: 35px;
     text-align: center;
     margin: 0px;
-    margin: 50px 0px 10px 0px;
+    margin: 50px 0px 0px 0px;
 }
 
 .wrapper img {
@@ -28,7 +28,7 @@ body {
 }
 
 .directions {
-    margin: 50px 0px 0px 0px;
+    margin: 200px 0px 0px 0px;
 }
 
 .column,
@@ -45,4 +45,24 @@ p {
 
 .column2 svg {
     fill: gray;
+}
+
+/* This styles the aside container */
+.aSide {
+    /* height: 100px; */
+    width: 500px;
+    position: absolute;
+    /* top: calc(50% - 250px); */
+    right: -135px;
+    top: -70px;
+}
+
+/* This styles the 3D object inserted in the aside container */
+.aSide model-viewer {
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+    border: none;
 }

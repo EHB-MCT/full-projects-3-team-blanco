@@ -6,7 +6,9 @@ body {
     background-color: #EEECE4;
 }
 
-#tour-selector {
+#between {}
+
+.title {
     text-align: center;
     font-family: 'Secular One', sans-serif;
     font-size: 25pt;
@@ -44,7 +46,7 @@ body {
 }
 
 .item1 span {
-    border-bottom: 5px solid #bad030;
+    border-bottom: 5px solid grey;
     padding-right: 60px;
     text-align: left;
     overflow: hidden;

@@ -1,0 +1,26 @@
+* {
+    background-color: #EEECE4;
+    margin: 0px;
+}
+
+.arrow img {
+    position: relative;
+    width: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.header .title {
+    position: relative;
+    font-family: 'Secular One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.info_text .info {
+    text-align: justify;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 17px;
+    margin: 0 20px 0 20px;
+}

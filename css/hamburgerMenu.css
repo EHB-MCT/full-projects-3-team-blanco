@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
 .container {
   max-width: 1050px;
   width: 90%;
@@ -13,6 +15,25 @@
   justify-content: space-between;
   align-items: center;
   height: 62px;
+  margin: 10px 0px 0px 0px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons img {
+  width: 10%;
+  margin: 0px 30px 20px 30px;
+}
+
+#icon1 {
+  width: 10%;
+}
+
+#icon2 {
+  width: 10%;
 }
 
 .navbar .menu-items {
@@ -32,7 +53,7 @@
   height: 26px;
   width: 32px;
   top: 17px;
-  left: 20px;
+  right: -5px;
   z-index: 5;
   opacity: 0;
   cursor: pointer;
@@ -44,7 +65,7 @@
   width: 32px;
   position: absolute;
   top: 17px;
-  left: 20px;
+  right: -5px;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -74,6 +95,7 @@
 }
 
 .navbar .menu-items {
+  background-color: #EEECE4;
   padding-top: 120px;
   height: 100vh;
   width: 100%;
@@ -86,25 +108,26 @@
   text-align: center;
 }
 
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
+.nav-container input[type="checkbox"]:checked~.menu-items {
   transform: translateX(0);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
   transform: rotate(45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
   transform: scaleY(0);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
   transform: rotate(-45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .logo {
+.nav-container input[type="checkbox"]:checked~.logo {
   display: none;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -118,8 +141,9 @@
 
 .button {
   font-size: 40px;
+  font-family: 'Secular One', sans-serif;
   margin: 1em;
-  padding: 30px 90px;
+  padding: 30px 75px;
   border-radius: 33px;
   background: #f7f7f7;
   box-shadow: -2px 2px 4px #cac9c2, 2px -2px 4px #ffffff;

@@ -6,17 +6,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/full-projects-3-team-blanco/css/tours.css">
+    <link rel="stylesheet" href="../css/tours.css">
+    <link rel="stylesheet" href="../css/hamburgerMenu.css">
 </head>
 
 <body>
-    <div id="tour-selector">
+
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <div class="menu-items">
+                    <div class="buttons">
+
+                        <div class="icons">
+                            <img id="icon1" src="../images/information.png">
+                            <img id="icon2" src="../images/settings.png">
+                        </div>
+
+                        <button class="button" onclick="location.href='tours.html'" type="button">
+                            tours
+                        </button>
+                        <button class="button" onclick="location.href='map.html'" type="button">
+                            map
+                        </button>
+                        <button class="button" onclick="location.href='destinations.html'" type="button">
+                            go to
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        $(function () {
+            $(".button").click(function () {
+                $(this).toggleClass("buttonClick");
+            });
+        });
+    </script>
+
+    <div class="title">
         <h2>TOURS</h2>
+    </div>
+
+    <div id="tour-selector">
+
         <div id="tour-options">
 
             <button class="item1" id="start-tour-btn"><span>Personalized Tour</span>
                 <p>Make your own tour by adding your preferences</p>
             </button>
+
+            <div id="between">
+            </div>
 
             <button class="item2" id="start-tour-btn"><span>All Tour</span>
                 <p>In this tour you will see the entire museum</p>

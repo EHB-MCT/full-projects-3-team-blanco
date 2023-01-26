@@ -5,16 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <title>Document</title>
     <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="../css/hamburgerMenu.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 
 <body>
 
+    <nav>
+        <div class="navbar">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+    
+            <div class="menu-items">
+              <div class="buttons">
+    
+                <div class="icons">
+                  <img id="icon1" src="../images/information.png">
+                  <img id="icon2" src="../images/settings.png">
+                </div>
+    
+                <button class="button" onclick="location.href='tours.html'" type="button">
+                  tours
+                </button>
+                <button class="button" onclick="location.href='map.html'" type="button">
+                  map
+                </button>
+                <button class="button" onclick="location.href='destinations.html'" type="button">
+                  go to
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <script>
+        $(function () {
+          $(".button").click(function () {
+            $(this).toggleClass("buttonClick");
+          });
+        });
+      </script>
+
+    <!-- http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf -->
     <div class="wrapper">
 
         <h2>Map</h2>
-        <img src="../images/Screenshot 2023-01-24 at 10.22.08.png">
+        <h3>School Tour</h3>
+
+        <div class="aSide">
+            <model-viewer src=" http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf" alt="VR Headset" auto-rotate
+                camera-controls ar ios-src="http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf">
+            </model-viewer>
+        </div>
 
         <div class="directions">
             <div class="row">
@@ -40,7 +91,7 @@
         <img src="../images/Screenshot 2023-01-24 at 11.50.15.png" alt="">
 
     </div>
-
+    </div>
 </body>
 
 </html>

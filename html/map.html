@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <title>Document</title>
     <link rel="stylesheet" href="../css/map.css">
     <link rel="stylesheet" href="../css/hamburgerMenu.css">
@@ -17,43 +17,43 @@
 
     <nav>
         <div class="navbar">
-          <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>
-    
-            <div class="menu-items">
-              <div class="buttons">
-    
-                <div class="icons">
-                  <img id="icon1" src="../images/information.png">
-                  <img id="icon2" src="../images/settings.png">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
                 </div>
-    
-                <button class="button" onclick="location.href='tours.html'" type="button">
-                  tours
-                </button>
-                <button class="button" onclick="location.href='map.html'" type="button">
-                  map
-                </button>
-                <button class="button" onclick="location.href='destinations.html'" type="button">
-                  go to
-                </button>
-              </div>
+
+                <div class="menu-items">
+                    <div class="buttons">
+
+                        <div class="icons">
+                            <img id="icon1" src="../images/information.png">
+                            <img id="icon2" src="../images/settings.png">
+                        </div>
+
+                        <button class="button" onclick="location.href='tours.html'" type="button">
+                            tours
+                        </button>
+                        <button class="button" onclick="location.href='map.html'" type="button">
+                            map
+                        </button>
+                        <button class="button" onclick="location.href='destinations.html'" type="button">
+                            go to
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
-      <script>
+    </nav>
+    <script>
         $(function () {
-          $(".button").click(function () {
-            $(this).toggleClass("buttonClick");
-          });
+            $(".button").click(function () {
+                $(this).toggleClass("buttonClick");
+            });
         });
-      </script>
+    </script>
 
     <!-- http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf -->
     <div class="wrapper">
@@ -66,6 +66,12 @@
                 camera-controls ar ios-src="http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf">
             </model-viewer>
         </div>
+
+        <!-- <div class="aSide">
+            <model-viewer src="../3d/Floor_plan_MNW4.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                ios-src="../3d/Floor_plan_MNW4.gltf">
+            </model-viewer>
+        </div> -->
 
         <div class="directions">
             <div class="row">

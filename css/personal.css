@@ -27,7 +27,7 @@ body {
     margin: 0px 0px 40px 0px;
 }
 
-/*CHECKBOXES*/
+/*CHECKBOXES START*/
 .box {
     display: flex;
     flex-direction: column;
@@ -73,10 +73,10 @@ body {
     margin-left: 8px;
 }
 
-/*CHECKBOXES*/
+/*CHECKBOXES END*/
 
 
-/*SEARCH BAR*/
+/*SEARCH BAR START*/
 .wrapper1 {
     display: flex;
     justify-content: center;
@@ -116,7 +116,7 @@ body {
     outline: none;
 }
 
-/*SEARCH BAR*/
+/*SEARCH BAR END*/
 
 .button {
     margin: 40px 40px 40px 40px;

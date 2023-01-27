@@ -6,6 +6,11 @@ body {
     background-color: #EEECE4;
     font-family: 'Oxygen', sans-serif;
     margin: 0px;
+    font-family: 'Oxygen', sans-serif;
+    background: url(../../images/backgrounds/background1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .wrapper {
@@ -34,7 +39,7 @@ body {
     display: flex;
     justify-content: center;
     width: 300px;
-    margin: 30px;
+    margin: 55px;
 }
 
 .directions {

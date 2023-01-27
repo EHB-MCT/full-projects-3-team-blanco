@@ -108,5 +108,6 @@ body {
     font-family: 'Oxygen', sans-serif;
 }
 
-
-
+.personal_container {
+    text-decoration: none;
+}

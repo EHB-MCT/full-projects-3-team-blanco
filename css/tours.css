@@ -95,3 +95,19 @@ body {
     border-bottom: 5px solid #bad030;
     padding-right: 100px;
 }
+
+
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+
+body {
+    background: url(../../images/backgrounds/background2.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.personal_container {
+    text-decoration: none;
+}

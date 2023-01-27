@@ -2,7 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
 body {
+    margin: auto;
     background-color: #EEECE4;
+    font-family: 'Oxygen', sans-serif;
+    margin: 0px;
+    background: url(../../images/backgrounds/background3.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 p {
@@ -12,6 +19,7 @@ p {
 }
 
 #tour-selector {
+    margin: 0px 30px 0px 30px;
     text-align: center;
     font-family: 'Secular One', sans-serif;
     font-size: 25pt;
@@ -60,8 +68,8 @@ p {
 }
 
 #carousel-container {
-    height: 200px;
-    width: 600px;
+    height: 350px;
+    width: 680px;
     padding: 0;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -106,4 +114,31 @@ p {
     100% {
         color: #000;
     }
+}
+
+.navbar img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1050px;
+    margin: auto;
+
+}
+
+.navbar {
+    width: 100%;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    margin: 10px 0px 0px 0px;
+}
+
+.container.nav-container {
+    margin-left: 80%;
 }

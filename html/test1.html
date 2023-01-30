@@ -6,9 +6,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="../css/test1.css">
+        <link rel="stylesheet" href="../css/destinations.css">
         <link rel="stylesheet" href="../css/hamburgerMenu.css">
-        <script src="../js/overlay.js"></script>
+        <script src="../js/test1.js"></script>
+        <script src="../js/test2.js"></script>
 </head>
 
 <body>
@@ -28,8 +29,9 @@
                                         <div class="buttons">
 
                                                 <div class="icons">
-                                                        <img id="icon1" src="../images/information.png">
-                                                        <img id="icon2" src="../images/settings.png">
+                                                        <img id="icon1" src="../images/home.png">
+                                                        <img id="icon2" src="../images/information.png">
+                                                        <img id="icon3" src="../images/settings.png">
                                                 </div>
 
                                                 <button class="button" onclick="location.href='tours.html'"
@@ -57,11 +59,14 @@
         </script>
         <!-- HAMBURGER MENU -->
 
+        <!-- TITLE -->
         <div class="title">
-                <h2>Tours</h2>
-                <p>I want to do following tours:</p>
+                <h2>Go To</h2>
+                <p>I want to visit the following area:</p>
         </div>
+        <!-- TITLE -->
 
+        <!-- SEARCHBAR -->
         <div class="wrapper1">
                 <div class="searchBar">
                         <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search"
@@ -74,36 +79,65 @@
                         </button>
                 </div>
         </div>
+        <!-- SEARCHBAR -->
 
         <!-- BUTTONS -->
         <div class="buttons1">
 
-                <div id="overlay" onclick="off()">
-
-
-                        <div class="title">
-                                <h2>Personalized Tour</h2>
-                                <p>I'm interested in the following:</p>
+                <!-- OVERLAY -->
+                <div id="overlay" onclick="off1()">
+                        <div id="tour-selector">
+                                <h2>Dinosaur Gallery</h2>
                         </div>
 
+                        <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'"
+                                        type="button">
+                                        Next </button></a>
 
+                        <button class="item4" id="start-tour-btn"><span>Dinosaur Gallery</span>
+                                <p>Overlay 1 tour-selector</p>
+                        </button>
+
+                        <main id="carousel-container">
+                                <ul id="carousel">
+                                        <li class="slide" id="audi">
+                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+                                        </li>
+                                        <li class="slide" id="ferrari">
+                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+                                        </li>
+                                        <li class="slide" id="lamborghini">
+                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+                                        </li>
+                                        <li class="slide" id="bmw">
+                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+                                        </li>
+                                        <li class="slide" id="mercedes">
+                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+                                        </li>
+                                </ul>
+                        </main>
+
+                        <p class="a1">Swipe to see more pictures</p>
                 </div>
 
                 <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line10" onclick=" on()">
-                                <p>Personalized Tour</p>
+                        <button id="line10" onclick=" on1()">
+                                <p>Dinosaur Gallery</p>
                         </button>
                 </div>
+                <!-- OVERLAY -->
 
 
-                <div id="overlay" onclick="off()">
+                <!-- OVERLAY2 -->
+                <div id="overlay2" onclick="off2()">
                         <div id="tour-selector">
                                 <h2>Discovery of the Iguanodons</h2>
                         </div>
 
-                        <button class="button-select" onclick="location.href='goTo.html'" type="button">
-                                Add to selection
-                        </button>
+                        <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'"
+                                        type="button">
+                                        Next </button></a>
 
                         <button class="item4" id="start-tour-btn"><span>Discovery of the Iguanodons</span>
                                 <p>Gallery of humankind, Gallery of evolution, Living planet</p>
@@ -133,20 +167,21 @@
                 </div>
 
                 <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line10" onclick=" on()">
+                        <button id="line10" onclick=" on2()">
                                 <p>Discovery of the Iguanodons</p>
                         </button>
                 </div>
+                <!-- OVERLAY2 -->
 
-
-                <div id="overlay" onclick="off()">
+                <!-- OVERLAY3 -->
+                <div id="overlay3" onclick="off()">
                         <div id="tour-selector">
                                 <h2>Mosasaurus</h2>
                         </div>
 
-                        <button class="button-select" onclick="location.href='goTo.html'" type="button">
-                                Add to selection
-                        </button>
+                        <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'"
+                                        type="button">
+                                        Next </button></a>
 
                         <button class="item4" id="start-tour-btn"><span>Mosasaurus</span>
                                 <p>Gallery of humankind, Gallery of evolution, Living planet</p>
@@ -180,270 +215,11 @@
                                 <p>Mosasaurus</p>
                         </button>
                 </div>
-
-
-                <div id="overlay" onclick="off()">
-                        <div id="tour-selector">
-                                <h2>BiodiverCITY</h2>
-                        </div>
-
-                        <button class="button-select" onclick="location.href='goTo.html'" type="button">
-                                Add to selection
-                        </button>
-
-                        <button class="item4" id="start-tour-btn"><span>BiodiverCITY</span>
-                                <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more picturs</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line20" onclick=" on()">
-                                <p>BiodiverCITY</p>
-                        </button>
-                </div>
-
-
-                <div id="overlay" onclick="off()">
-                        <div id="tour-selector">
-                                <h2>Gallery of Humankind</h2>
-                        </div>
-
-                        <button class="button-select" onclick="location.href='goTo.html'" type="button">
-                                Add to selection
-                        </button>
-
-                        <button class="item4" id="start-tour-btn"><span>Gallery of Humankind</span>
-                                <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more picturs</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line20" onclick=" on()">
-                                <p>Gallery of Humankind</p>
-                        </button>
-                </div>
-
-
-                <div id="overlay" onclick="off()">
-                        <div id="tour-selector">
-                                <h2>Minerals</h2>
-                        </div>
-
-                        <button class="button-select" onclick="location.href='goTo.html'" type="button">
-                                Add to selection
-                        </button>
-
-                        <button class="item4" id="start-tour-btn"><span>Minerals</span>
-                                <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more picturs</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line20" onclick=" on()">
-                                <p>Minerals</p>
-                        </button>
-                </div>
-
-
-                <div id="overlay" onclick="off()">
-                        <div id="tour-selector">
-                                <h2> 250 Years of Natural
-                                        Sciences</h2>
-                        </div>
-
-                        <button class="button-select" onclick="location.href='goTo.html'" type="button">
-                                Add to selection
-                        </button>
-
-                        <button class="item4" id="start-tour-btn"><span>250 Years of Natural
-                                        Sciences</span>
-                                <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more picturs</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line30" onclick=" on()">
-                                <p>250 Years of Natural
-                                        Sciences</p>
-                        </button>
-                </div>
+                <!-- OVERLAY3 -->
 
 
 
-                <div id="overlay" onclick="off()">
-                        <div id="tour-selector">
-                                <h2>Living Planet </h2>
-                        </div>
-
-                        <button class="button-select" onclick="location.href='goTo.html'" type="button">
-                                Add to selection
-                        </button>
-
-                        <button class="item4" id="start-tour-btn"><span>Living Planet </span>
-                                <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more picturs</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line30" onclick=" on()">
-                                <p>Living Planet </p>
-                        </button>
-                </div>
-
-
-                <div id="overlay" onclick="off()">
-                        <div id="tour-selector">
-                                <h2>Luminopolis</h2>
-                        </div>
-
-                        <button class="button-select" onclick="location.href='goTo.html'" type="button">
-                                Add to selection
-                        </button>
-
-                        <button class="item4" id="start-tour-btn"><span>Luminopolis</span>
-                                <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more picturs</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line40" onclick=" on()">
-                                <p>Luminopolis</p>
-                        </button>
-                </div>
-        </div>
-        <!-- BUTTONS-->
+                <!-- BUTTONS-->
 </body>
 
 </html>

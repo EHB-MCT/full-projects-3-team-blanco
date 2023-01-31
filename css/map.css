@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
 body {
-    max-width: 410px;
+    max-width: 428px;
     margin: auto;
     background-color: #EEECE4;
     font-family: 'Oxygen', sans-serif;
@@ -76,7 +76,7 @@ p {
 /* This styles the 3D object inserted in the aside container */
 .aSide model-viewer {
     height: 850px;
-    width: 350px;
+    width: 0px;
     position: relative;
     /* top: 0;
     left: 0; */

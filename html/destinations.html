@@ -17,24 +17,30 @@
 </head>
 
 <body>
-
-
-  <nav>
-    <div class="navbar">
-      <div class="container nav-container">
-        <input class="checkbox" type="checkbox" name="" id="" />
-        <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-        </div>
-
-        <div class="menu-items">
-          <div class="buttons">
-
             <div class="icons">
-              <img id="icon1" src="../images/information.png">
-              <img id="icon2" src="../images/settings.png">
+              <img id="icon1" src="../images/home.png">
+              <img id="icon2" src="../images/information.png">
+              <img id="icon3" src="../images/settings.png">
+
+          <div class="menu-items">
+            <div class="buttons">
+
+              <div class="icons">
+                <img id="icon1" src="../images/information.png">
+                <img id="icon2" src="../images/settings.png">
+              </div>
+
+              <button class="button" onclick="location.href='tours.html'" type="button">
+                tours
+              </button>
+              <button class="button" onclick="location.href='map.html'" type="button">
+                map
+              </button>
+              <button class="button" onclick="location.href='destinations.html'" type="button">
+                go to
+              </button>
+
+
             </div>
 
             <button class="button" onclick="location.href='tours.html'" type="button">
@@ -56,8 +62,454 @@
       $(".button").click(function () {
         $(this).toggleClass("buttonClick");
       });
+
     });
   </script>
+  <!-- HAMBURGER MENU -->
+
+  <!-- TITLE -->
+  <div class="title">
+    <h2>Go To</h2>
+    <p>I want to visit the following area:</p>
+  </div>
+  <!-- TITLE -->
+
+  <!-- SEARCHBAR -->
+  <div class="wrapper1">
+    <div class="searchBar">
+      <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+      <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+          <path fill="#666666"
+            d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- SEARCHBAR -->
+
+  <!-- BUTTONS -->
+  <div class="buttons1">
+
+    <!-- OVERLAY1 -->
+    <div id="overlay" onclick="off1()">
+      <div id="tour-selector">
+        <h2>Dinosaur Gallery</h2>
+        <p>Click anywhere on the page to leave</p>
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>Dinosaur Gallery</span>
+        <p>With a surface area of over 3000 m2 and dozens of specimens, the Dinosaur Gallery is the largest room in
+          Europe entirely devoted to dinosaurs, their discovery, lives and evolution.
+
+          Dinosaurs first appeared nearly 230 million years ago, at the end of the Triassic period. During the Jurassic
+          period, they multiplied and diversified, colonizing every continent. They became extinct at the end of the
+          Cretaceous period 65 million years ago. But did they really disappear? We’re not so sure!
+
+        </p>
+      </button>
+
+      <main id="carousel-container">
+        <ul id="carousel">
+          <li class="slide" id="audi">
+            <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+          </li>
+          <li class="slide" id="ferrari">
+            <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+          </li>
+          <li class="slide" id="lamborghini">
+            <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+          </li>
+          <li class="slide" id="bmw">
+            <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+          </li>
+          <li class="slide" id="mercedes">
+            <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+          </li>
+        </ul>
+      </main>
+
+      <p class="a1">Swipe to see more pictures</p>
+    </div>
+
+    <div class="button1" onclick="location.href='#'" type="button">
+      <button id="line10" onclick=" on1()">
+        <p>Dinosaur Gallery</p>
+      </button>
+    </div>
+    <!-- OVERLAY1 -->
+
+
+    <!-- OVERLAY2 -->
+    <div id="overlay2" onclick="off2()">
+      <div id="tour-selector">
+        <h2>Discovery of the Iguanodons</h2>
+        <p>Click anywhere on the page to leave</p>
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>Discovery of the Iguanodons</span>
+        <p>Thirty relatively complete iguanodon skeletons were discovered 322m underground in a coal mine in Bernissart,
+          Belgium at the end of the 19th century. Since the bones were still in their original position, it was possible
+          to present the skeletons in ‘lifelike’ poses. They immediately attracted visitors from all over the world!</p>
+      </button>
+
+      <main id="carousel-container">
+        <ul id="carousel">
+          <li class="slide" id="audi">
+            <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+          </li>
+          <li class="slide" id="ferrari">
+            <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+          </li>
+          <li class="slide" id="lamborghini">
+            <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+          </li>
+          <li class="slide" id="bmw">
+            <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+          </li>
+          <li class="slide" id="mercedes">
+            <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+          </li>
+        </ul>
+      </main>
+
+      <p class="a1">Swipe to see more picturs</p>
+    </div>
+
+    <div class="button1" onclick="location.href='#'" type="button">
+      <button id="line10" onclick=" on2()">
+        <p>Discovery of the Iguanodons</p>
+      </button>
+    </div>
+    <!-- OVERLAY2 -->
+
+    <!-- OVERLAY3 -->
+    <div id="overlay3" onclick="off3()">
+      <div id="tour-selector">
+        <h2>Mosasaurus</h2>
+        <p>Click anywhere on the page to leave</p>
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>Mosasaurus</span>
+        <p>At the time when the tyrannosaurs ruled the continents, gigantic predatory lizards roamed the seas. These
+          were the mosasaurs.
+
+          Strangely, not many people have ever heard of them. That is why we have decided to present a few of the
+          specimens from our mosasaur collection, one of the biggest in the world. These are now on display in a cosy,
+          well-lit gallery next to our iguanodon exhibit in the basement.</p>
+      </button>
+
+      <main id="carousel-container">
+        <ul id="carousel">
+          <li class="slide" id="audi">
+            <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+          </li>
+          <li class="slide" id="ferrari">
+            <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+          </li>
+          <li class="slide" id="lamborghini">
+            <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+          </li>
+          <li class="slide" id="bmw">
+            <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+          </li>
+          <li class="slide" id="mercedes">
+            <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+          </li>
+        </ul>
+      </main>
+
+      <p class="a1">Swipe to see more picturs</p>
+    </div>
+
+    <div class="button1" onclick="location.href='#'" type="button">
+      <button id="line10" onclick=" on3()">
+        <p>Mosasaurus</p>
+      </button>
+    </div>
+    <!-- OVERLAY3 -->
+
+    <!-- OVERLAY4 -->
+    <div id="overlay4" onclick="off4()">
+      <div id="tour-selector">
+        <h2>BiodiverCITY</h2>
+        <p>Click anywhere on the page to leave</p>
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>BiodiverCITY</span>
+        <p>The city is not just pavements, walls and concrete. It is often unexpectedly full of animal life and
+          vegetation!
+
+          Who would have thought that a slowworm could be hiding in a corner of your garden? Have you ever tried to
+          follow a blue-winged grasshopper along the railway verge? Or have you experienced a day in the life of a
+          hedgehog? Even though the city may sometimes appear gloomy and grey, it is full of surprises!</p>
+      </button>
+
+      <main id="carousel-container">
+        <ul id="carousel">
+          <li class="slide" id="audi">
+            <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+          </li>
+          <li class="slide" id="ferrari">
+            <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+          </li>
+          <li class="slide" id="lamborghini">
+            <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+          </li>
+          <li class="slide" id="bmw">
+            <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+          </li>
+          <li class="slide" id="mercedes">
+            <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+          </li>
+        </ul>
+      </main>
+
+      <p class="a1">Swipe to see more picturs</p>
+    </div>
+
+    <div class="button1" onclick="location.href='#'" type="button">
+      <button id="line20" onclick=" on4()">
+        <p>BiodiverCITY</p>
+      </button>
+    </div>
+    <!-- OVERLAY4 -->
+
+    <!-- OVERLAY5 -->
+    <div id="overlay5" onclick="off5()">
+      <div id="tour-selector">
+        <h2>Gallery of Humankind</h2>
+        <p>Click anywhere on the page to leave</p>
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>Gallery of Humankind</span>
+        <p>From Sahelanthropus to Homo sapiens, from embryo to adult: explore the human evolution and body in the
+          ‘Gallery of Humankind – Our evolution, our body’.
+
+          To start with, fossils and 3D reconstructions will take you down the branching paths of 7 million years of
+          evolution. Next, interactive tools will reveal the adaptations that set us apart from our predecessors
+          (including a bigger brain and smaller teeth). Then, using simulations, you will explore the marvellous and
+          complex machine that is our body, its development, how it works and what it needs to survive and reproduce
+          (that should get your teenagers interested!).</p>
+      </button>
+
+      <main id="carousel-container">
+        <ul id="carousel">
+          <li class="slide" id="audi">
+            <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+          </li>
+          <li class="slide" id="ferrari">
+            <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+          </li>
+          <li class="slide" id="lamborghini">
+            <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+          </li>
+          <li class="slide" id="bmw">
+            <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+          </li>
+          <li class="slide" id="mercedes">
+            <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+          </li>
+        </ul>
+      </main>
+
+      <p class="a1">Swipe to see more picturs</p>
+    </div>
+
+    <div class="button1" onclick="location.href='#'" type="button">
+      <button id="line20" onclick=" on5()">
+        <p>Gallery of Humankind</p>
+      </button>
+    </div>
+    <!-- OVERLAY5 -->
+
+    <!-- OVERLAY6 -->
+    <div id="overlay6" onclick="off6()">
+      <div id="tour-selector">
+        <h2>Minerals</h2>
+        <p>Click anywhere on the page to leave</p>
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>Mineral Hall</span>
+        <p>In 1828 crown prince William II of the Netherlands and his wife, the sister of tsar Alexander I, donated 808
+          Russian rocks and minerals to the Brussels Museum, the precursor of the current Museum of Natural Sciences.
+
+          These were the first pieces of our geological collection, which today contains more than 5,000 Belgian and
+          25,000 foreign pieces (or 80% of the types known worldwide). It includes tens of thousands of twin crystals,
+          500 cut stones, nearly 140 meteorites (four of which fell in Belgium), wonderful fluorescent minerals and even
+          a very rare sample of lunar rock.</p>
+      </button>
+
+      <main id="carousel-container">
+        <ul id="carousel">
+          <li class="slide" id="audi">
+            <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+          </li>
+          <li class="slide" id="ferrari">
+            <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+          </li>
+          <li class="slide" id="lamborghini">
+            <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+          </li>
+          <li class="slide" id="bmw">
+            <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+          </li>
+          <li class="slide" id="mercedes">
+            <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+          </li>
+        </ul>
+      </main>
+
+      <p class="a1">Swipe to see more picturs</p>
+    </div>
+
+    <div class="button1" onclick="location.href='#'" type="button">
+      <button id="line20" onclick=" on6()">
+        <p>Minerals</p>
+      </button>
+    </div>
+    <!-- OVERLAY6 -->
+
+    <!-- OVERLAY7 -->
+    <div id="overlay7" onclick="off7()">
+      <div id="tour-selector">
+        <h2> 250 Years of Natural
+          Sciences</h2>
+        <p>Click anywhere on the page to leave</p>
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>250 Years of Natural
+          Sciences</span>
+        <p>In this room are the fantastic results of memorable scientific expeditions, unusual excavations, moving
+          events and remarkable specimens that trace the evolution of our museum. With its 37 million specimens
+          (minerals, dinosaurs, insects, shells and mammals from both land and sea), today the museum’s collection is
+          the third largest natural science collection in Europe, only exceeded by Paris and London! Charles de Lorraine
+          would never have imagined this impressive establishment when he started his curiosity cabinet in 1751!</p>
+      </button>
+
+      <main id="carousel-container">
+        <ul id="carousel">
+          <li class="slide" id="audi">
+            <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+          </li>
+          <li class="slide" id="ferrari">
+            <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+          </li>
+          <li class="slide" id="lamborghini">
+            <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+          </li>
+          <li class="slide" id="bmw">
+            <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+          </li>
+          <li class="slide" id="mercedes">
+            <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+          </li>
+        </ul>
+      </main>
+
+      <p class="a1">Swipe to see more picturs</p>
+    </div>
+
+    <div class="button1" onclick="location.href='#'" type="button">
+      <button id="line30" onclick=" on7()">
+        <p>250 Years of Natural
+          Sciences</p>
+      </button>
+    </div>
+    <!-- OVERLAY7 -->
+
+    <!-- OVERLAY8-->
+    <div id="overlay8" onclick="off8()">
+      <div id="tour-selector">
+        <h2>Living Planet </h2>
+        <p>Click anywhere on the page to leave</p>
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>Living Planet </span>
+        <p>Did you know that the gnu and the zebra eat the same plants? But they don’t fight about it! The gnu eats the
+          young sprouts that are soft and juicy while the zebra chews on tougher leaves. And did you know that a thirsty
+          camel can drink up to 150 litres of water? And that wildfires can be beneficial for some trees?
+
+          Living Planet represents more than 850 specimens displayed on 2,000m2 (from the giraffe, to the koala and the
+          aphid), 3D models you can touch, visual media, audio interviews and interactive, recreational and educational
+          animations.</p>
+      </button>
+
+      <main id="carousel-container">
+        <ul id="carousel">
+          <li class="slide" id="audi">
+            <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+          </li>
+          <li class="slide" id="ferrari">
+            <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+          </li>
+          <li class="slide" id="lamborghini">
+            <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+          </li>
+          <li class="slide" id="bmw">
+            <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+          </li>
+          <li class="slide" id="mercedes">
+            <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+          </li>
+        </ul>
+      </main>
+
+      <p class="a1">Swipe to see more picturs</p>
+    </div>
+
+    <div class="button1" onclick="location.href='#'" type="button">
+      <button id="line30" onclick=" on8()">
+        <p>Living Planet </p>
+      </button>
+    </div>
+    <!-- OVERLAY8-->
+
+    <!-- OVERLAY9-->
+    <div id="overlay9" onclick="off9()">
+      <div id="tour-selector">
+        <h2>Luminopolis </h2>
+        <p>Click anywhere on the page to leave</p>
+
+      </div>
+
+      <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'" type="button">
+          Next </button></a>
+
+      <button class="item4" id="start-tour-btn"><span>Luminopolis</span>
+        <p>What is light? How does it affect our day-to-day? How does it influence life? In this totally original
+          game-based exhibition, light is explored from every angle – physical, biological, technical and sociological.
+
+          LUMINOPOLIS is an original and captivating concept, a race against the clock with a choice of 10, 14 or 18
+          puzzles to solve as a team. Equipped with a tablet to activate the game stations, get hints and enter your
+          answers. A great way to explore the vast theme of light through play.</p>
+      </button>
+
+    </script>
 
 
   <div class="wrapper">
@@ -117,10 +569,14 @@
 
 
     <div class="button1" onclick="location.href='#'" type="button">
-      <button id="line40" onclick=" on()">
+      <button id="line30" onclick=" on9()">
         <p>Luminopolis</p>
       </button>
     </div>
+    <!-- OVERLAY9-->
+
+    <!-- BUTTONS-->
+
 
 </body>
 

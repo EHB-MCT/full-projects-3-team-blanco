@@ -25,3 +25,9 @@
 .buttonClick {
   box-shadow: inset -2px 2px 4px #cac9c2, inset 2px -2px 4px #ffffff;
 }
+
+img {
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+}

@@ -63,22 +63,38 @@ p {
     fill: gray;
 }
 
-/* This styles the aside container */
+/* This styles the aside container
 .aSide {
-    /* height: 100px; */
+    /* height: 100px; 
     width: 500px;
     position: absolute;
-    /* top: calc(50% - 250px); */
+     top: calc(50% - 250px); 
     right: -135px;
     top: -70px;
-}
+}/*
 
-/* This styles the 3D object inserted in the aside container */
+/* This styles the 3D object inserted in the aside container 
 .aSide model-viewer {
     height: 850px;
     width: 0px;
     position: relative;
     /* top: 0;
-    left: 0; */
+    left: 0; 
+    border: none;
+} */
+
+/* This styles the aside container */
+.aSide {
+    position: absolute;
+    width: 150%;
+    top: 10%;
+    left: 5%;
+}
+
+/* This styles the 3D object inserted in the aside container */
+.aSide model-viewer {
+    height: 400px;
+    width: 400px;
+    position: absolute;
     border: none;
 }

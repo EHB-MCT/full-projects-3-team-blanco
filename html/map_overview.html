@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/map_overview.css">
+    <link rel="stylesheet" href="../css/hamburgerMenu.css">
+    <script src="../JS/overlay.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+
+    <!-- HAMBURGER -->
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+
+                <div class="menu-items">
+                    <div class="buttons">
+
+
+                        <button class="button" onclick="location.href='tours.html'" type="button">
+                            tours
+                        </button>
+                        <button class="button" onclick="location.href='map.html'" type="button">
+                            map
+                        </button>
+                        <button class="button" onclick="location.href='destinations.html'" type="button">
+                            go to
+                        </button>
+
+                        <div class="icons">
+                            <a href="../index.html"><img id="icon1" src="../images/home.png"></a>
+                            <a href="./extra/info.html"><img id="icon2" src="../images/information.png"></a>
+                            <a href="./extra/info.html"><img id="icon3" src="../images/settings.png"></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        $(function () {
+            $(".button").click(function () {
+                $(this).toggleClass("buttonClick");
+            });
+        });
+    </script>
+    <!-- HAMBURGER -->
+
+    <div class="wrapper">
+
+        <h2>Map</h2>
+        <h3>Take a look at the entire museum or a specific level!</h3>
+
+        <!-- <div class="aSide">
+            <model-viewer src="./3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                ios-src="./3d/Floor_plan_V0.gltf">
+                <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                    ios-src="../3d/Floor_plan_V0.gltf">
+                </model-viewer>
+        </div> -->
+
+        <details class="dropdown">
+            <summary role="button">
+                <a id="button_dropdown">Choose map</a>
+            </summary>
+            <ul>
+                <li>
+                    <div id="overlay10" onclick="off10()">
+                        <div id="text">Level 0</div>
+                        <div class="aSide">
+                            <model-viewer src="./3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                                ios-src="./3d/Floor_plan_V0.gltf">
+                                <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate
+                                    camera-controls ar ios-src="../3d/Floor_plan_V0.gltf">
+                                </model-viewer>
+                        </div>
+
+                    </div>
+
+                    <div id="button_onclick">
+                        <button onclick="on10()">Level 0</button>
+                    </div>
+                </li>
+                <li>
+                    <div id="overlay11" onclick="off11()">
+                        <div id="text">Level 1</div>
+                        <div class="aSide">
+                            <model-viewer src="./3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                                ios-src="./3d/Floor_plan_V0.gltf">
+                                <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate
+                                    camera-controls ar ios-src="../3d/Floor_plan_V0.gltf">
+                                </model-viewer>
+                        </div>
+
+                    </div>
+
+                    <div id="button_onclick">
+                        <button onclick="on11()">Level 1</button>
+                    </div>
+                </li>
+                <li>
+                    <div id="overlay12" onclick="off12()">
+                        <div id="text">Level 2</div>
+                        <div class="aSide">
+                            <model-viewer src="./3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                                ios-src="./3d/Floor_plan_V0.gltf">
+                                <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate
+                                    camera-controls ar ios-src="../3d/Floor_plan_V0.gltf">
+                                </model-viewer>
+                        </div>
+
+                    </div>
+
+                    <div id="button_onclick">
+                        <button onclick="on12()">Level 2</button>
+                    </div>
+                </li>
+                <li>
+                    <div id="overlay13" onclick="off13()">
+                        <div id="text">Level 3</div>
+                        <div class="aSide">
+                            <model-viewer src="./3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                                ios-src="./3d/Floor_plan_V0.gltf">
+                                <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate
+                                    camera-controls ar ios-src="../3d/Floor_plan_V0.gltf">
+                                </model-viewer>
+                        </div>
+
+                    </div>
+
+                    <div id="button_onclick">
+                        <button onclick="on13()">Level 3</button>
+                    </div>
+                </li>
+                <li>
+                    <div id="overlay14" onclick="off14()">
+                        <div id="text">Level 4</div>
+                        <div class="aSide">
+                            <model-viewer src="./3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                                ios-src="./3d/Floor_plan_V0.gltf">
+                                <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate
+                                    camera-controls ar ios-src="../3d/Floor_plan_V0.gltf">
+                                </model-viewer>
+                        </div>
+
+                    </div>
+
+                    <div id="button_onclick">
+                        <button onclick="on14()">Level 4</button>
+                    </div>
+                </li>
+            </ul>
+        </details>
+
+
+
+
+    </div>
+</body>
+
+</html>

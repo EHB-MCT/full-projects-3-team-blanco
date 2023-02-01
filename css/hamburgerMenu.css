@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap%22");
+
+body {
+  background-color: #eeece4;
+}
 
 .container {
   max-width: 1050px;
@@ -30,11 +34,15 @@
 }
 
 #icon1 {
-  width: 10%;
+  width: 30%;
 }
 
 #icon2 {
-  width: 10%;
+  width: 30%;
+}
+
+#icon3 {
+  width: 30%;
 }
 
 .navbar .menu-items {
@@ -96,17 +104,9 @@
 }
 
 .navbar .menu-items {
-  background-color: #EEECE4;
-  padding-top: 120px;
-  height: 100vh;
-  width: 110%;
   transform: translate(-150%);
-  display: flex;
-  flex-direction: column;
-  margin-left: -20px;
-  padding-left: 50px;
+
   transition: transform 0.5s ease-in-out;
-  text-align: center;
 }
 
 .nav-container input[type="checkbox"]:checked~.menu-items {
@@ -132,17 +132,12 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  position: fixed;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  margin-top: 15vh;
 }
 
 .button {
   font-size: 40px;
-  font-family: 'Secular One', sans-serif;
+  font-family: "Secular One", sans-serif;
   margin: 1em;
   padding: 30px 75px;
   border-radius: 33px;
@@ -150,6 +145,9 @@
   box-shadow: -2px 2px 4px #cac9c2, 2px -2px 4px #ffffff;
   border: none;
   text-transform: uppercase;
+  margin-right: 0;
+  width: 100%;
+  margin-left: 0.5vw;
 }
 
 .buttonClick {

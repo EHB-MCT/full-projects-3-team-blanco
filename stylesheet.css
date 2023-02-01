@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
+* {
+    max-width: 428px;
+    max-height: 710px;
+}
+
 body {
     background: url(https://raw.githubusercontent.com/EHB-MCT/full-projects-3-team-blanco/main/images/backgrounds/background2.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -8,6 +13,8 @@ body {
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Oxygen', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .header img {
@@ -18,23 +25,22 @@ body {
     margin-top: -70px;
 }
 
-/* .footer img {
+.footer img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
-} */
+}
 
 /* CAROUSSEL */
-html,
-body {
-    margin: 0;
-    padding: 0;
+.pic-ctn img {
+    width: 400px;
 }
 
 .pic-ctn {
-    width: 100vw;
-    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: 62%;
 }
 
 @keyframes display {
@@ -66,9 +72,9 @@ body {
 
 .pic-ctn {
     position: relative;
-    width: 100vw;
+    width: 100px;
     height: 300px;
-    margin-top: 15vh;
+    margin-top: 7vh;
 }
 
 .pic-ctn>img {
@@ -76,7 +82,7 @@ body {
     top: 0;
     left: calc(50% - 100px);
     opacity: 0;
-    animation: display 10s infinite;
+    animation: display 15s infinite;
 }
 
 img:nth-child(2) {
@@ -96,3 +102,31 @@ img:nth-child(5) {
 }
 
 /* CAROUSSEL */
+
+/* BUTTONS */
+.buttons1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+.button1 {
+    width: 350px;
+    margin: 10px;
+    padding: 20px 30px;
+    font-family: 'Secular One', sans-serif;
+    font-size: 20px;
+    border-radius: 33px;
+    box-shadow: -2px 2px 4px #cac9c2, 2px -2px 4px #ffffff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.buttonClick {
+    box-shadow: inset -2px 2px 4px #cac9c2, inset 2px -2px 4px #ffffff;
+}
+
+
+/* BUTTONS */

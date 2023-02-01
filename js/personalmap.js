@@ -1,14 +1,11 @@
 "use strict";
 
-import result from '../js/personal';
-
 drawPath()
 
 function drawPath() {
 
-    console.log(result);
-
     let canvas = document.querySelector("canvas");
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
     let context = canvas.getContext("2d");
@@ -19,11 +16,16 @@ function drawPath() {
     const xStart = width / 2
     const yStart = height / 2
 
+    context.lineWidth = 2;
     context.strokeStyle = "blue";
 
     context.beginPath();
-    context.lineTo(xStart, yStart);
+
+    context.moveTo(xStart, yStart);
     context.lineTo(100, 200);
+    context.stroke();
+
+
 
     /*var mysql = require('mysql');
 

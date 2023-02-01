@@ -5,10 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/stylesheet.css">
-  <link rel="stylesheet" href="/css/hamburgerMenu.css">
-  <script src="./js/caroussel.js"></script>
-  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+  <link rel="stylesheet" href="./css/hamburgerMenu.css">
+  <title>Home</title>
 </head>
 
 <body>
@@ -27,9 +26,9 @@
           <div class="buttons">
 
             <div class="icons">
-              <img id="icon1" src="../images/home.png">
-              <img id="icon2" src="../images/information.png">
-              <img id="icon3" src="../images/settings.png">
+              <img id="icon1" src="./images/home.png">
+              <img id="icon2" src="./images/information.png">
+              <img id="icon3" src="./images/settings.png">
             </div>
 
             <button class="button" onclick="location.href='tours.html'" type="button">
@@ -60,16 +59,38 @@
   </div>
 
   <div class="pic-ctn">
-    <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+    <img src="./images/museum/dsc00446-min.jpg" class="pic">
+    <img src="./images/museum/dsc00447-min.jpg" class="pic">
+    <img src="./images/museum/dsc00457-min.jpg" class="pic">
+    <img src="./images/museum/DSC00468-min.jpg" class="pic">
+    <img src="./images/museum/DSC00473-min.jpg" class="pic">
   </div>
 
-  <!-- <div class="footer">
+  <!-- <img id="loading" src="../images/Preloader-MNW.gif"> -->
+
+  <div class="buttons1">
+    <button class="button1" onclick="location.href='tours.html'" type="button">
+      tours
+    </button>
+    <button class="button1" onclick="location.href='map.html'" type="button">
+      map
+    </button>
+    <button class="button1" onclick="location.href='destinations.html'" type="button">
+      go to
+    </button>
+  </div>
+
+  <script>
+    $(function () {
+      $(".button1").click(function () {
+        $(this).toggleClass("buttonClick");
+      });
+    });
+  </script>
+
+  <div class="footer">
     <img src="./images/footer-min.png">
-  </div> -->
+  </div>
 
 </body>
 

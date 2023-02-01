@@ -9,3 +9,4 @@
 - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_overlay_text (overlay effect)
 - https://codelearningpoint.com/post/How-to-get-multiple-checkbox-value-in-javascript (getting value of checkboxes JS code)
 - https://www.youtube.com/watch?v=Tjt_u_OSh40 (changing languages)
+- https://codepen.io/garetmckinley/pen/XvgzKQ (dropdown menu)

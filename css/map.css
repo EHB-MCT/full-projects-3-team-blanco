@@ -2,13 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
 
 body {
-    max-width: 410px;
+    max-width: 428px;
     margin: auto;
     background-color: #EEECE4;
     font-family: 'Oxygen', sans-serif;
     margin: 0px;
     font-family: 'Oxygen', sans-serif;
-    background: url(../../images/backgrounds/background1.png) no-repeat center center fixed;
+    background: url(https://raw.githubusercontent.com/EHB-MCT/full-projects-3-team-blanco/main/images/backgrounds/background3.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -63,22 +63,38 @@ p {
     fill: gray;
 }
 
-/* This styles the aside container */
+/* This styles the aside container
 .aSide {
-    /* height: 100px; */
+    /* height: 100px; 
     width: 500px;
     position: absolute;
-    /* top: calc(50% - 250px); */
+     top: calc(50% - 250px); 
     right: -135px;
     top: -70px;
+}/*
+
+/* This styles the 3D object inserted in the aside container 
+.aSide model-viewer {
+    height: 850px;
+    width: 0px;
+    position: relative;
+    /* top: 0;
+    left: 0; 
+    border: none;
+} */
+
+/* This styles the aside container */
+.aSide {
+    position: absolute;
+    width: 150%;
+    top: 10%;
+    left: 5%;
 }
 
 /* This styles the 3D object inserted in the aside container */
 .aSide model-viewer {
-    height: 850px;
-    width: 350px;
-    position: relative;
-    /* top: 0;
-    left: 0; */
+    height: 400px;
+    width: 400px;
+    position: absolute;
     border: none;
 }

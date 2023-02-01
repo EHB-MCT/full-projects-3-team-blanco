@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap');
+
+body {
+    background: url(https://raw.githubusercontent.com/EHB-MCT/full-projects-3-team-blanco/main/images/backgrounds/background1.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.title {
+    font-family: 'Secular One', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+    margin: 50px 0px 0px 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    top: 60%;
+
+}
+
+.settings p {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+
+}
+
+.settings h2 {
+    font-family: 'Secular One', sans-serif;
+    font-size: 25px;
+}
+
+.settings {
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0.8em;
+    border-radius: 45px;
+    background: #ffffff;
+    box-shadow: inset 11px 11px 37px #d1d1d1,
+        inset -11px -11px 37px #ffffff;
+    border: none;
+}
+
+#button {
+    border-radius: 45px;
+    border: none;
+    background: #f7f7f7;
+    box-shadow: -2px 2px 4px #cac9c2, 2px -2px 4px #ffffff;
+    padding: 10px 40px 10px 40px;
+    font-size: 20px;
+    font-family: 'Secular One', sans-serif;
+}

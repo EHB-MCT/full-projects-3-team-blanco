@@ -69,3 +69,51 @@ function off9() {
 function on9() {
     document.getElementById("overlay9").style.display = "block";
 }
+
+function off10() {
+    document.getElementById("overlay10").style.display = "none";
+}
+
+function on10() {
+    document.getElementById("overlay10").style.display = "block";
+}
+
+function off11() {
+    document.getElementById("overlay11").style.display = "none";
+}
+
+function on11() {
+    document.getElementById("overlay11").style.display = "block";
+}
+
+function off12() {
+    document.getElementById("overlay12").style.display = "none";
+}
+
+function on12() {
+    document.getElementById("overlay12").style.display = "block";
+}
+
+function off13() {
+    document.getElementById("overlay13").style.display = "none";
+}
+
+function on13() {
+    document.getElementById("overlay13").style.display = "block";
+}
+
+function off14() {
+    document.getElementById("overlay14").style.display = "none";
+}
+
+function on14() {
+    document.getElementById("overlay14").style.display = "block";
+}
+
+function off15() {
+    document.getElementById("overlay15").style.display = "none";
+}
+
+function on15() {
+    document.getElementById("overlay15").style.display = "block";
+}

@@ -12,6 +12,7 @@
 
 <body>
 
+    <!-- HAMBURGER -->
     <nav>
         <div class="navbar">
             <div class="container nav-container">
@@ -25,11 +26,6 @@
                 <div class="menu-items">
                     <div class="buttons">
 
-                        <div class="icons">
-                            <img id="icon1" src="../images/home.png">
-                            <img id="icon2" src="../images/information.png">
-                            <img id="icon3" src="../images/settings.png">
-                        </div>
 
                         <button class="button" onclick="location.href='tours.html'" type="button">
                             tours
@@ -40,6 +36,13 @@
                         <button class="button" onclick="location.href='destinations.html'" type="button">
                             go to
                         </button>
+
+                        <div class="icons">
+                            <a href="../index.html"><img id="icon1" src="../images/home.png"></a>
+                            <a href="./extra/info.html"><img id="icon2" src="../images/information.png"></a>
+                            <a href="./extra/info.html"><img id="icon3" src="../images/settings.png"></a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -52,7 +55,7 @@
             });
         });
     </script>
-
+    <!-- HAMBURGER -->
 
     <div class="title">
         <h2>TOURS</h2>
@@ -69,27 +72,27 @@
             <div id="between">
             </div>
 
-            <button class="item2" id="start-tour-btn"><span>All Tour</span>
+            <button class="item2" id="start-tour-btn" onclick="location.href='./map.html'"><span>All Tour</span>
                 <p>In this tour you will see the entire museum</p>
             </button>
-            <button class="item3" id="start-tour-btn"><span>Family Tour</span>
+            <button class="item3" id="start-tour-btn" onclick="location.href='./map.html'"><span>Family Tour</span>
                 <p>In this tour you will see: <br> Dinosaurus Gallery, Discovery of the Iguanodons, Mosasaurs, 250 years
                     of the Natural Sciences, Gallery of evolution</p>
             </button>
-            <button class="item4" id="start-tour-btn"><span>School Tour</span>
+            <button class="item4" id="start-tour-btn" onclick="location.href='./map.html'"><span>School Tour</span>
                 <p>In this tour you will see: <br>Gallery of humankind, Gallery of evolution, Living planet</p>
             </button>
-            <button class="item5" id="start-tour-btn"><span>A-Tour</span>
+            <button class="item5" id="start-tour-btn" onclick="location.href='./map.html'"><span>A-Tour</span>
                 <p>In this tour you will see: <br> Dinosaur-Gallery, Discovery of the Iguanodons, Mosasaurs</p>
             </button>
-            <button class="item6" id="start-tour-btn"><span>B-Tour</span>
+            <button class="item6" id="start-tour-btn" onclick="location.href='./map.html'"><span>B-Tour</span>
                 <p>In this tour you will see: <br> The temporary exhibition: Luminopolis</p>
             </button>
-            <button class="item7" id="start-tour-btn"><span>C-Tour</span>
+            <button class="item7" id="start-tour-btn" onclick="location.href='./map.html'"><span>C-Tour</span>
                 <p>In this tour you will see: <br> Rocks and Minerals, Gallery of Humankind, BiodiverCITY, 250 years of
                     Natural Sciences</p>
             </button>
-            <button class="item8" id="start-tour-btn"><span>D-Tour</span>
+            <button class="item8" id="start-tour-btn" onclick="location.href='./map.html'"><span>D-Tour</span>
                 <p>In this tour you will see: <br> Gallery of Evolution, Living Planet</p>
             </button>
             <buttons></buttons>

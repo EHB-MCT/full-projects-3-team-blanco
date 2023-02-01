@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
     <title>Document</title>
-    <link rel="stylesheet" href="./css/map.css">
-    <link rel="stylesheet" href="./css/hamburgerMenu.css">
+    <link rel="stylesheet" href="../css/map.css">
+    <link rel="stylesheet" href="../css/hamburgerMenu.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 
 <body>
 
+    <!-- HAMBURGER -->
     <nav>
         <div class="navbar">
             <div class="container nav-container">
@@ -28,11 +29,6 @@
                 <div class="menu-items">
                     <div class="buttons">
 
-                        <div class="icons">
-                            <img id="icon1" src="../images/home.png">
-                            <img id="icon2" src="../images/information.png">
-                            <img id="icon3" src="../images/settings.png">
-                        </div>
 
                         <button class="button" onclick="location.href='tours.html'" type="button">
                             tours
@@ -43,6 +39,13 @@
                         <button class="button" onclick="location.href='destinations.html'" type="button">
                             go to
                         </button>
+
+                        <div class="icons">
+                            <a href="../index.html"><img id="icon1" src="../images/home.png"></a>
+                            <a href="./extra/info.html"><img id="icon2" src="../images/information.png"></a>
+                            <a href="./extra/info.html"><img id="icon3" src="../images/settings.png"></a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -55,6 +58,7 @@
             });
         });
     </script>
+    <!-- HAMBURGER -->
 
     <!-- http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf -->
     <div class="wrapper">
@@ -72,9 +76,9 @@
 
             <model-viewer src="./3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
                 ios-src="./3d/Floor_plan_V0.gltf">
-            <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
-                ios-src="../3d/Floor_plan_V0.gltf">
-            </model-viewer>
+                <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
+                    ios-src="../3d/Floor_plan_V0.gltf">
+                </model-viewer>
         </div>
 
         <div class="directions">

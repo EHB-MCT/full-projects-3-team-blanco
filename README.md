@@ -1,3 +1,10 @@
+# GeoMuseum
+
+## Motivation
+Navigating through the Royal Belgian Museum for Sciences can be a real nightmare. The museum is spread throughout 3 buildings, and said buildings were built on a slope. This means that walking from one building to another in the museum can be really disorienting. 
+
+
+
 # Bronnen
 - https://neumorphism.io/#ffffff (box shadows van knoppen en kaders)
 - https://www.youtube.com/watch?v=wtBERi7Lf3c

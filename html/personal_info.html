@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schooltour</title>
-    <link rel="stylesheet" href="../css/schoolTour.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schooltour</title>
+  <link rel="stylesheet" href="../css/schoolTour.css">
 </head>
 
 <body>
 
-    <!-- HAMBURGER MENU -->
+  <!-- HAMBURGER -->
   <nav>
     <div class="navbar">
       <div class="container nav-container">
@@ -25,21 +25,23 @@
         <div class="menu-items">
           <div class="buttons">
 
-            <div class="icons">
-              <img id="icon1" src="./images/home.png">
-              <img id="icon2" src="./images/information.png">
-              <img id="icon3" src="./images/settings.png">
-            </div>
 
-            <button class="button" onclick="location.href='./html/tours.html'" type="button">
+            <button class="button" onclick="location.href='tours.html'" type="button">
               tours
             </button>
-            <button class="button" onclick="location.href='./html/map_overview.html'" type="button">
+            <button class="button" onclick="location.href='map.html'" type="button">
               map
             </button>
-            <button class="button" onclick="location.href='./html/destinations.html'" type="button">
+            <button class="button" onclick="location.href='destinations.html'" type="button">
               go to
             </button>
+
+            <div class="icons">
+              <a href="../index.html"><img id="icon1" src="../images/home.png"></a>
+              <a href="./extra/info.html"><img id="icon2" src="../images/information.png"></a>
+              <a href="./extra/info.html"><img id="icon3" src="../images/settings.png"></a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -52,50 +54,50 @@
       });
     });
   </script>
-  <!-- HAMBURGER MENU -->
+  <!-- HAMBURGER -->
 
-    <nav>
-        <div class="navbar">
-            <div class="container nav-container">
-                <a href="personal.html"><img src="../images/x.svg"></a>
-            </div>
-        </div>
-    </nav>
-
-
-    <div id="tour-selector">
-        <h2>Dinosaur Gallery</h2>
+  <nav>
+    <div class="navbar">
+      <div class="container nav-container">
+        <a href="personal.html"><img src="../images/x.svg"></a>
+      </div>
     </div>
+  </nav>
 
-    <button class="button1" onclick="location.href='goTo.html'" type="button">
-        Add to selection
-    </button>
 
-    <button class="item4" id="start-tour-btn"><span>Dinosaur Gallery</span>
-        <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-    </button>
+  <div id="tour-selector">
+    <h2>Dinosaur Gallery</h2>
+  </div>
 
-    <main id="carousel-container">
-        <ul id="carousel">
-            <li class="slide" id="audi">
-                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-            </li>
-            <li class="slide" id="ferrari">
-                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-            </li>
-            <li class="slide" id="lamborghini">
-                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-            </li>
-            <li class="slide" id="bmw">
-                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-            </li>
-            <li class="slide" id="mercedes">
-                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-            </li>
-        </ul>
-    </main>
+  <button class="button1" onclick="location.href='goTo.html'" type="button">
+    Add to selection
+  </button>
 
-    <p class="a1">Swipe to see more picturs</p>
+  <button class="item4" id="start-tour-btn"><span>Dinosaur Gallery</span>
+    <p>Gallery of humankind, Gallery of evolution, Living planet</p>
+  </button>
+
+  <main id="carousel-container">
+    <ul id="carousel">
+      <li class="slide" id="audi">
+        <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
+      </li>
+      <li class="slide" id="ferrari">
+        <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
+      </li>
+      <li class="slide" id="lamborghini">
+        <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
+      </li>
+      <li class="slide" id="bmw">
+        <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
+      </li>
+      <li class="slide" id="mercedes">
+        <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
+      </li>
+    </ul>
+  </main>
+
+  <p class="a1">Swipe to see more picturs</p>
 
 </body>
 

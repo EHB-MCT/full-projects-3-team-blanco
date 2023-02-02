@@ -4,7 +4,7 @@ var itemForm = document.getElementById('box');
 var checkBoxes = itemForm.querySelectorAll('input[type="checkBox"]');
 document.getElementById('next').addEventListener('click', getData);
 
-export let result = [];
+let result = [];
 
 function getData() {
 

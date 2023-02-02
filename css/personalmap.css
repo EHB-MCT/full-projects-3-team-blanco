@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+body {
+    max-width: 428px;
+    margin: auto;
+    background-color: #EEECE4;
+    margin: 0px;
+    background: url(https://raw.githubusercontent.com/EHB-MCT/full-projects-3-team-blanco/main/images/backgrounds/background3.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 31.25rem;
+    z-index: 10;
+}
+
 .title h2 {
     font-family: 'Secular One', sans-serif;
     font-size: 35px;
     text-align: center;
     margin: 0px;
-    margin: 30px 0px 10px 0px;
 }
+
+.map {
+    margin-top: 130px;
+}
+
+/*.map img {
+    max-width: 100%;
+}*/

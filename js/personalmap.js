@@ -1,6 +1,5 @@
 "use strict";
 
-
 /*import {
     result
 } from "./personal.js";*/

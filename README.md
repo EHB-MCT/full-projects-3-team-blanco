@@ -10,3 +10,4 @@
 - https://codelearningpoint.com/post/How-to-get-multiple-checkbox-value-in-javascript (getting value of checkboxes JS code)
 - https://www.youtube.com/watch?v=Tjt_u_OSh40 (changing languages)
 - https://codepen.io/garetmckinley/pen/XvgzKQ (dropdown menu)
+- https://alvarotrigo.com/blog/toggle-switch-css/ (toggle switch menu)

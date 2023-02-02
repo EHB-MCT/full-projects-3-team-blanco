@@ -6,220 +6,95 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="../css/destinations.css">
+        <link rel="stylesheet" href="../css/test1.css">
         <link rel="stylesheet" href="../css/hamburgerMenu.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="../js/test1.js"></script>
-        <script src="../js/test2.js"></script>
 </head>
 
 <body>
 
-        <!-- HAMBURGER MENU -->
-        <nav>
-                <div class="navbar">
-                        <div class="container nav-container">
-                                <input class="checkbox" type="checkbox" name="" id="" />
-                                <div class="hamburger-lines">
-                                        <span class="line line1"></span>
-                                        <span class="line line2"></span>
-                                        <span class="line line3"></span>
-                                </div>
+        <div class="wrapper">
 
-                                <div class="menu-items">
-                                        <div class="buttons">
+                <!-- HAMBURGER -->
+                <nav>
+                        <div class="navbar">
+                                <div class="container nav-container">
+                                        <input class="checkbox" type="checkbox" name="" id="" />
+                                        <div class="hamburger-lines">
+                                                <span class="line line1"></span>
+                                                <span class="line line2"></span>
+                                                <span class="line line3"></span>
+                                        </div>
 
-                                                <div class="icons">
-                                                        <img id="icon1" src="../images/home.png">
-                                                        <img id="icon2" src="../images/information.png">
-                                                        <img id="icon3" src="../images/settings.png">
+                                        <div class="menu-items">
+                                                <div class="buttons">
+
+                                                        <div class="icons">
+                                                                <img id="icon1" src="../../images/home.png">
+                                                                <img id="icon2" src="../../images/information.png">
+                                                                <img id="icon3" src="../../images/settings.png">
+                                                        </div>
+
+                                                        <button class="button" onclick="location.href='tours.html'"
+                                                                type="button">
+                                                                tours
+                                                        </button>
+                                                        <button class="button" onclick="location.href='map.html'"
+                                                                type="button">
+                                                                map
+                                                        </button>
+                                                        <button class="button"
+                                                                onclick="location.href='destinations.html'"
+                                                                type="button">
+                                                                go to
+                                                        </button>
                                                 </div>
-
-                                                <button class="button" onclick="location.href='tours.html'"
-                                                        type="button">
-                                                        tours
-                                                </button>
-                                                <button class="button" onclick="location.href='map.html'" type="button">
-                                                        map
-                                                </button>
-                                                <button class="button" onclick="location.href='destinations.html'"
-                                                        type="button">
-                                                        go to
-                                                </button>
                                         </div>
                                 </div>
                         </div>
-                </div>
-        </nav>
-        <script>
-                $(function () {
-                        $(".button").click(function () {
-                                $(this).toggleClass("buttonClick");
+                </nav>
+                <script>
+                        $(function () {
+                                $(".button").click(function () {
+                                        $(this).toggleClass("buttonClick");
+                                });
                         });
-                });
-        </script>
-        <!-- HAMBURGER MENU -->
+                </script>
+                <!-- HAMBURGER -->
 
-        <!-- TITLE -->
-        <div class="title">
-                <h2>Go To</h2>
-                <p>I want to visit the following area:</p>
-        </div>
-        <!-- TITLE -->
-
-        <!-- SEARCHBAR -->
-        <div class="wrapper1">
-                <div class="searchBar">
-                        <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search"
-                                value="" />
-                        <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
-                                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-                                        <path fill="#666666"
-                                                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
-                                </svg>
-                        </button>
+                <div class="title">
+                        <h2>Settings</h2>
                 </div>
-        </div>
-        <!-- SEARCHBAR -->
 
-        <!-- BUTTONS -->
-        <div class="buttons1">
+                <div class="container">
+                        <div class="settings">
+                                <div class="intro_container">
+                                        <h2>Language</h2>
+                                        <p>Select language:</p>
+                                        <button id="en" class="button1">English</button></a>
+                                        <button id="nl" class="button1">Nederlands</button></a>
+                                        <button id="fr" class="button1">Francais</button></a>
+                                </div>
+                        </div>
+                        <div class="settings">
+                                <div class="language_container">
+                                        <h2>Elevator</h2>
+                                        <p> Don't want to follow a specific route but you just want to find the way to a
+                                                certain room? This is possible at the </p>
+                                        <a href="../destinations.html"><button id="button">Destinations</button></a>
+                                </div>
+                        </div>
+                        <div class="settings">
+                                <div class="location_container">
+                                        <h2>Location</h2>
+                                        <p> Would you like a general view of the museum then you can find this at</p>
+                                        <a href="../map.html"><button id="button">Map</button></a>
+                                        <p>an interactive display of the museum.</p>
+                                </div>
 
-                <!-- OVERLAY -->
-                <div id="overlay" onclick="off1()">
-                        <div id="tour-selector">
-                                <h2>Dinosaur Gallery</h2>
                         </div>
 
-                        <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'"
-                                        type="button">
-                                        Next </button></a>
-
-                        <button class="item4" id="start-tour-btn"><span>Dinosaur Gallery</span>
-                                <p>Overlay 1 tour-selector</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more pictures</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line10" onclick=" on1()">
-                                <p>Dinosaur Gallery</p>
-                        </button>
-                </div>
-                <!-- OVERLAY -->
-
-
-                <!-- OVERLAY2 -->
-                <div id="overlay2" onclick="off2()">
-                        <div id="tour-selector">
-                                <h2>Discovery of the Iguanodons</h2>
-                        </div>
-
-                        <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'"
-                                        type="button">
-                                        Next </button></a>
-
-                        <button class="item4" id="start-tour-btn"><span>Discovery of the Iguanodons</span>
-                                <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more picturs</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line10" onclick=" on2()">
-                                <p>Discovery of the Iguanodons</p>
-                        </button>
-                </div>
-                <!-- OVERLAY2 -->
-
-                <!-- OVERLAY3 -->
-                <div id="overlay3" onclick="off()">
-                        <div id="tour-selector">
-                                <h2>Mosasaurus</h2>
-                        </div>
-
-                        <a href="map.html"><button class="button-select" onclick="location.href='goTo.html'"
-                                        type="button">
-                                        Next </button></a>
-
-                        <button class="item4" id="start-tour-btn"><span>Mosasaurus</span>
-                                <p>Gallery of humankind, Gallery of evolution, Living planet</p>
-                        </button>
-
-                        <main id="carousel-container">
-                                <ul id="carousel">
-                                        <li class="slide" id="audi">
-                                                <img src="../images/image_museum/dsc00444.jpg" alt="Audi" />
-                                        </li>
-                                        <li class="slide" id="ferrari">
-                                                <img src="../images/image_museum/dsc00447.jpg" alt="Ferrari" />
-                                        </li>
-                                        <li class="slide" id="lamborghini">
-                                                <img src="../images/image_museum/dsc00452.jpg" alt="Lamborghini" />
-                                        </li>
-                                        <li class="slide" id="bmw">
-                                                <img src="../images/image_museum/DSC00468.jpg" alt="BMW" />
-                                        </li>
-                                        <li class="slide" id="mercedes">
-                                                <img src="../images/image_museum/DSC00473.jpg" alt="Mercedes" />
-                                        </li>
-                                </ul>
-                        </main>
-
-                        <p class="a1">Swipe to see more picturs</p>
-                </div>
-
-                <div class="button1" onclick="location.href='#'" type="button">
-                        <button id="line10" onclick=" on()">
-                                <p>Mosasaurus</p>
-                        </button>
-                </div>
-                <!-- OVERLAY3 -->
-
-
-
-                <!-- BUTTONS-->
 </body>
 
 </html>

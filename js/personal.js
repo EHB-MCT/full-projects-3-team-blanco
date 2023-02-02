@@ -1,7 +1,6 @@
 'use strict';
 
 
-
 var itemForm = document.getElementById('box'); // getting the parent container of all the checkbox inputs
 var checkBoxes = itemForm.querySelectorAll('input[type="checkBox"]'); // get all the check box
 document.getElementById('next').addEventListener('click', getData); //add a click event to the save button

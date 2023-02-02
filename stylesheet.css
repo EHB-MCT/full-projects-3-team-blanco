@@ -17,6 +17,12 @@ body {
     padding: 0;
 }
 
+#loading {
+    width: 300%;
+    position: absolute;
+    z-index: 10;
+}
+
 .header img {
     display: block;
     margin-left: auto;

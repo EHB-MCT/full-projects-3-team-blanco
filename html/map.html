@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/map.css">
-    <link rel="stylesheet" href="../css/hamburgerMenu.css">
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/map.css">
+  <link rel="stylesheet" href="../css/hamburgerMenu.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 </head>
 
 <body>
 
- <!-- HAMBURGER MENU -->
- <nav>
+  <!-- HAMBURGER -->
+  <nav>
     <div class="navbar">
       <div class="container nav-container">
         <input class="checkbox" type="checkbox" name="" id="" />
@@ -29,21 +29,23 @@
         <div class="menu-items">
           <div class="buttons">
 
-            <div class="icons">
-              <img id="icon1" src="./images/home.png">
-              <img id="icon2" src="./images/information.png">
-              <img id="icon3" src="./images/settings.png">
-            </div>
 
-            <button class="button" onclick="location.href='./html/tours.html'" type="button">
+            <button class="button" onclick="location.href='tours.html'" type="button">
               tours
             </button>
-            <button class="button" onclick="location.href='./html/map_overview.html'" type="button">
+            <button class="button" onclick="location.href='map.html'" type="button">
               map
             </button>
-            <button class="button" onclick="location.href='./html/destinations.html'" type="button">
+            <button class="button" onclick="location.href='destinations.html'" type="button">
               go to
             </button>
+
+            <div class="icons">
+              <a href="../index.html"><img id="icon1" src="../images/home.png"></a>
+              <a href="./extra/info.html"><img id="icon2" src="../images/information.png"></a>
+              <a href="./extra/info.html"><img id="icon3" src="../images/settings.png"></a>
+            </div>
+
           </div>
         </div>
       </div>
@@ -56,54 +58,50 @@
       });
     });
   </script>
-  <!-- HAMBURGER MENU -->
+  <!-- HAMBURGER -->
 
-    <!-- http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf -->
-    <div class="wrapper">
+  <!-- http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf -->
+  <div class="wrapper">
 
-        <h2>Map</h2>
-        <h3>School Tour</h3>
+    <h2>Map</h2>
+    <h3>School Tour</h3>
 
-        <!-- <div class="aSide">
+    <!-- <div class="aSide">
             <model-viewer src=" http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf" alt="VR Headset" auto-rotate
                 camera-controls ar ios-src="http://dimetrd.cluster027.hosting.ovh.net/blanco/Map.gltf">
             </model-viewer>
         </div> -->
 
-        <div class="aSide">
+    <div class="aSide">
 
-            <model-viewer src="./3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
-                ios-src="./3d/Floor_plan_V0.gltf">
-                <model-viewer src="../3d/Floor_plan_V0.gltf" alt="VR Headset" auto-rotate camera-controls ar
-                    ios-src="../3d/Floor_plan_V0.gltf">
-                </model-viewer>
-        </div>
-
-        <div class="directions">
-            <div class="row">
-                <div class="column">
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
-                        <path
-                            d="M11 22A11 11 0 1 0 0 11a11 11 0 0 0 11 11zM6 10.051V10h.051l2.9-2.9V10H17v2H8.949v3L5 11.051z" />
-                    </svg>
-                    <p>Go 10 metres straight on <br> and
-                        follow the yellow line</p>
-                </div>
-                <div class="column2">
-                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
-                        <path
-                            d="M11 22A11 11 0 1 0 0 11a11 11 0 0 0 11 11zM6 10.051V10h.051l2.9-2.9V10H17v2H8.949v3L5 11.051z" />
-                    </svg>
-                    <p>Go 10 metres straight on <br> and
-                        follow the yellow line</p>
-                </div>
-            </div>
-        </div>
-
-        <img src="./images/Screenshot 2023-01-24 at 11.50.15.png" alt="">
-
+      <model-viewer src="https://dimetrodon.fr/blanco/Floor_plan_Volledig.gltf" alt="VR Headset" auto-rotate
+        camera-controls ar ios-src="https://dimetrodon.fr/blanco/Floor_plan_Volledig.gltf">
+      </model-viewer>
     </div>
+
+    <div class="directions">
+      <div class="row">
+        <div class="column">
+          <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+            <path d="M11 22A11 11 0 1 0 0 11a11 11 0 0 0 11 11zM6 10.051V10h.051l2.9-2.9V10H17v2H8.949v3L5 11.051z" />
+          </svg>
+          <p>Go 10 metres straight on <br> and
+            follow the yellow line</p>
+        </div>
+        <div class="column2">
+          <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="22" height="22">
+            <path d="M11 22A11 11 0 1 0 0 11a11 11 0 0 0 11 11zM6 10.051V10h.051l2.9-2.9V10H17v2H8.949v3L5 11.051z" />
+          </svg>
+          <p>Go 10 metres straight on <br> and
+            follow the yellow line</p>
+        </div>
+      </div>
     </div>
+
+    <img src="./images/Screenshot 2023-01-24 at 11.50.15.png" alt="">
+
+  </div>
+  </div>
 </body>
 
 </html>

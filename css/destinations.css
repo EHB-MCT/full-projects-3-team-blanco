@@ -23,7 +23,7 @@ body {
     text-align: center;
     margin: 0px;
     margin: 0px 0px 40px 0px;
-    
+
 }
 
 /*HEADER*/
@@ -153,8 +153,7 @@ body {
 
 /*CAROUSEL*/
 #carousel-container {
-    height: 200px;
-    width: 600px;
+    width: 110%;
     padding: 0;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -168,10 +167,10 @@ body {
 }
 
 .slide>img {
-    margin: 0px 0px 0px 1.5%;
+    margin: 0px 0px 0px 3%;
     border-radius: 45px;
     width: 65%;
-    height: 70%;
+    height: 100%;
     object-fit: cover;
 }
 

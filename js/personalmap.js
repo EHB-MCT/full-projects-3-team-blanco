@@ -1,10 +1,12 @@
 "use strict";
 
-drawPath()
+showRoute()
 
-function drawPath() {
+function showRoute() {
 
-    let canvas = document.querySelector("canvas");
+
+
+    /*let canvas = document.querySelector("canvas");
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -25,24 +27,11 @@ function drawPath() {
     context.lineTo(100, 200);
     context.stroke();
 
+    drawLevendToEvolutie();*/
 
 
-    /*var mysql = require('mysql');
+    // DOM MANIPULATION OF IMAGES //
 
-    var con = mysql.createConnection({
-        host: "localhost",
-        user: "DEV3020",
-        password: "92186537",
-        database: "DEV3020"
-    });
-
-    con.connect(function (err) {
-        if (err) throw err;
-        con.query("SELECT * FROM customers", function (err, result, fields) {
-            if (err) throw err;
-            console.log(result);
-        });
-    }); */
 
 
 

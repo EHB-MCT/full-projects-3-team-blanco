@@ -11,9 +11,20 @@ This google translate type of app will be created using beacons (esp's) who loca
 On top of that we created a 3d model of the entire museum. This means that you can take a look at the model for a better understandig of the museum's infrastructure, or even look at all the levels seperately.
 
 ## Features
-When you open the app there is a loading screen. After that there is an image caroussel and 3 buttons to show the three things the web application focusses on. 
 
-# Bronnen
+### Homepage 
+When you open the app there is a loading screen. After that there is an image caroussel and 3 buttons to show the three things the web application focusses on. The hamburger menu gives the user the same three options throughout the website with the option to return to the homepage, settings or information page.
+
+### Tours page
+On the tours page you can choose from the already existing loops in the museum, the new family or school loop hich we've added or you can personalize your own tour. To personalize your tour you simply click on the checkboxes of the areas which interest you, this will then give you a tour inclluding your interests.
+
+### Map page
+On the map page you can choose to look at the different levels of the museum in 3D. You can also select the entire museum if you want to take a closer look at the infrastructure. 
+
+## Go To
+On the Go To page you can select your destination from a list of all the rooms in the museum. Once you click on one you will be given an info page with additional info about the room and an image caroussel. When you click on next you will be directed to that destination.
+
+# Sources
 - https://neumorphism.io/#ffffff (box shadows van knoppen en kaders)
 - https://www.youtube.com/watch?v=wtBERi7Lf3c
 - https://codepen.io/kmuenster/details/XWWeQGw (round search bar)

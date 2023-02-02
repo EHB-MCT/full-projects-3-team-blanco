@@ -18,6 +18,9 @@ When you open the app there is a loading screen. After that there is an image ca
 ### Tours page
 On the tours page you can choose from the already existing loops in the museum, the new family or school loop hich we've added or you can personalize your own tour. To personalize your tour you simply click on the checkboxes of the areas which interest you, this will then give you a tour inclluding your interests.
 
+### Personalized Tour page
+On this page the customer can choose which parts of the museum they are most interested in. The idea is that after their selection is made, they get the shortest route with all their favorite destinations. This does not work for all since there was not enough time to make these, so we made an example. In this example the customer can follow their route and click on the stair or elevator icon to move up/down from level.
+
 ### Map page
 On the map page you can choose to look at the different levels of the museum in 3D. You can also select the entire museum if you want to take a closer look at the infrastructure. 
 

@@ -1,38 +1,22 @@
 "use strict";
 
-showRoute()
-
-function showRoute() {
-
-
-
-    /*let canvas = document.querySelector("canvas");
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    let context = canvas.getContext("2d");
-
-    var width = canvas.width;
-    var height = canvas.height;
-
-    const xStart = width / 2
-    const yStart = height / 2
-
-    context.lineWidth = 2;
-    context.strokeStyle = "blue";
-
-    context.beginPath();
-
-    context.moveTo(xStart, yStart);
-    context.lineTo(100, 200);
-    context.stroke();
-
-    drawLevendToEvolutie();*/
+document.getElementById('4_lift').addEventListener('click', FourLiftToThree);
+document.getElementById('4_trapboven').addEventListener('click', FourUpperToThree);
+document.getElementById('4_trapbeneden').addEventListener('click', FourDownToThree);
+document.getElementById('4_lift').addEventListener('click', nextRoute);
+document.getElementById('4_lift').addEventListener('click', nextRoute);
+document.getElementById('4_lift').addEventListener('click', nextRoute);
+document.getElementById('4_lift').addEventListener('click', nextRoute);
 
 
-    // DOM MANIPULATION OF IMAGES //
+function FourLiftToThree() {
+    document.getElementById("img").src = "../images/museum_routes/living_evolution_3.png";
+};
 
+function FourUpperToThree() {
+    document.getElementById("img").src = "../images/museum_routes/living_evolution_3.png";
+};
 
-
-
-}
+function FourDownToThree() {
+    document.getElementById("img").src = "../images/museum_routes/living_evolution_3.png";
+};
